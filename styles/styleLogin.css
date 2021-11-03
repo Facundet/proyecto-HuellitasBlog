@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #f5f5f5 !important;
+}
+/******************* HEADER ESTILOS *******************/
+header {
+  background: rgb(9, 23, 121);
+  background: linear-gradient(
+    87deg,
+    rgba(9, 23, 121, 1) 0%,
+    rgba(0, 138, 255, 1) 0%,
+    rgba(15, 126, 233, 1) 54%,
+    rgba(0, 70, 180, 1) 93%
+  );
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+.link-adoptar:hover {
+  color: rgba(255, 255, 255, 0.55) !important;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+  transition: 1s;
+}
+#logo:hover {
+  transform: rotate(330deg);
+}
+
+/******************* Aquí empieza los estilos de Login *******************/
+
+.boton-facebook {
+  background-color: white;
+}
+
+.boton-google {
+  background-color: white;
+}
+
+.botonLogin {
+  background-color: gainsboro;
+}
+
+.tituloMiCuenta {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  color: black;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.privacidad {
+  color: black;
+  font-size: 16px;
+}
+.correoElectronico {
+  color: black;
+  font-size: 18px;
+}
+
+.contraseña {
+  color: black;
+  font-size: 18px;
+}
+
+.usuarioYcontraseña {
+  color: black;
+  font-size: 18px;
+}
+
+.imagenlogin {
+  margin-top: 40px;
+  padding: 0 5%;
+  width: 600px;
+  height: 352px;
+}
+
+.tipografiaLogin {
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+.loginResponsive {
+  width: 75%;
+}
+
+.lineaLogin {
+  width: 75%;
+}
+
+/****************** Aquí empieza los estilos de contacto ****************/
+
+.tituloContacto {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.mapaContacto {
+  width: 100%;
+  height: 200px;
+}
+
+.inputOtraConsulta {
+  width: 55%;
+}
+
+.mapa {
+  margin-top: 50px;
+}
+
+/************************** CELULAR **************************/
+
+@media all and (min-width: 300px) and (max-width: 767px) {
+  .button-login {
+    margin-bottom: 5px;
+  }
+
+  /* Página de contacto */
+
+
+  .mapaContacto {
+    width: 320px;
+    height: 300px;
+  }
+
+  .imgStore {
+    margin-top: 10px;
+  }
+
+  .formContacto {
+    margin-bottom: 30px;
+  }
+
+  .inputOtraConsulta {
+    width: 85%;
+  }
+
+  /* Página de Login */
+
+  .tituloMiCuenta {
+      font-size: 45px;
+  }
+
+  .loginResponsive {
+    width: 100%;
+  }
+
+  .lineaLogin {
+    width: 100%;
+  }
+}
+
+/************************** TABLET **************************/
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .button-login {
+    margin-bottom: 5px;
+  }
+
+  /* Página de contacto */
+
+  .imgStore {
+    margin-top: 10px;
+  }
+
+  .inputOtraConsulta {
+    width: 85%;
+  }
+
+  /* Página de Login */
+
+  .imagenlogin {
+    margin-top: 40px;
+    padding: 0 5%;
+    width: 450px;
+    height: 300px;
+  }
+
+  .loginResponsive {
+    width: 100%;
+  }
+
+  .lineaLogin {
+    width: 100%;
+  }
+}

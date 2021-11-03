@@ -1,0 +1,90 @@
+body {
+    background-color: #f5f5f5 !important;
+  }
+body::before {
+  content: "";
+  width: 100%;
+  min-height: 110vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(90deg, #114161, #8c0000);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+#banner-img-top {
+  background-image: url(../img/img-AboutUs/s3un0bj59b1heym211tz.jpg);
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*======= HEADER ESTILOS ==========*/
+
+header {
+    background: rgb(9, 23, 121);
+    background: linear-gradient(
+      87deg,
+      rgba(9, 23, 121, 1) 0%,
+      rgba(0, 138, 255, 1) 0%,
+      rgba(15, 126, 233, 1) 54%,
+      rgba(0, 70, 180, 1) 93%
+    );
+  }
+  #navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  .link-adoptar:hover {
+    color: rgba(255, 255, 255, 0.55) !important;
+  }
+  
+  #logo {
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+  }
+  #logo:hover {
+    transform: rotate(330deg);
+  }
+
+/* CARDS  */
+.img-juan{
+  height: 400px;
+}
+
+
+
+/*======= BREAKPOINTS ==========*/
+@media (max-width: 1439px){
+  .img-juan{
+    height: 290px;
+  }
+}
+
+@media (max-width: 769px) {
+  .cards-Width {
+    width: 75%;
+  }
+  .img-juan{
+    height: 450px;
+  }
+}
+
+@media (max-width: 426px) {
+  .cards-Width {
+    width: 100%;
+  }
+  .img-juan{
+    height: 320px;
+  }
+}

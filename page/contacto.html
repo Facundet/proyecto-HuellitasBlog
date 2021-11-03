@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Juan José Iramain" />
+    <meta name="description" content="Huellitas el mejor sitio para tus animales" />
+    <link rel="shortcut icon" href="../img/Huella_de_perro.png" type="image/png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../styles/styleContacto.css" />
+    <script src="https://kit.fontawesome.com/6c0d90290c.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header id="navbar">
+      <!-- ============ BARRA DE NAVEGACION INICIO ============== -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <img id="logo" src="../img/Huella_de_perro.png" alt="Logo de Huellitas" />
+            <span>Huellitas</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active link-adoptar" aria-current="page" href="/page/galeria.html" target="_blank"
+                  >Adoptar una mascota</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../page/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./AboutUs.html" target="_blank">Nosotros</a>
+              </li>
+              <li class="nav-item mx-1 button-login">
+                <a
+                  class="btn btn-primary rounded-pill bg-light text-dark"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subs"
+                  >Suscribirse</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary rounded-pill text-white" href="./login.html" target="_blank">Iniciar sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- ============ BARRA DE NAVEGACION FIN ============== -->
+    </header>
+    <main>
+      <section class="container my-4">
+        <div class="row">
+          <h1 class="tituloContacto my-5 text-muted">Contactanos</h1>
+          <div class="col-sm-12 col-md-6">
+            <form class="formContacto">
+              <div class="mb-3">
+                <label for="nombre" class="form-label"
+                  ><i class="fa fa-user" aria-hidden="true"></i> Nombre y Apellido</label
+                >
+                <input
+                  type="text"
+                  class="form-control w-75 input-form"
+                  id="nombre"
+                  placeholder="Escribe tu nombre y apellido"
+                  minlength="10"
+                  max="40"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mail" class="form-label"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i> Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control w-75 input-form"
+                  id="mail"
+                  placeholder="Escribe tu correo"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label"
+                  ><i class="fa fa-mobile" aria-hidden="true"></i> Número de teléfono</label
+                >
+                <input
+                  type="text"
+                  class="form-control w-75 input-form"
+                  id="telefono"
+                  placeholder="Escribe tu número"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="consulta" class="form-label">Consulta</label>
+                <textarea
+                  class="form-control w-75 input-form"
+                  id="consulta"
+                  rows="3"
+                  maxlength="200"
+                  placeholder="Escribe aquí..."
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="check">
+                  <input type="checkbox" id="check" />
+                  ¿Desea recibir un email con los datos enviados?</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary w-25 rounded-pill">Enviar</button>
+              <button type="reset" class="btn btn-secondary w-25 me-3 rounded-pill">Limpiar</button>
+            </form>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <section class="mb-4 mt-2">
+              <h5>Preguntas frecuentes</h5>
+              <ul>
+                <li><a href="../page/error404.html">¿Querés adoptar?</a></li>
+                <li><a href="../page/error404.html">¿Cuáles son los requisitos para adoptar?</a></li>
+                <li><a href="../page/error404.html">¿Se puede devolver la mascota adoptada?</a></li>
+              </ul>
+            </section>
+            <section>
+              <h5>Encuentra otra respuesta</h5>
+              <div class="input-group mb-3 inputOtraConsulta">
+                <span class="input-group-text" id="otraConsulta"><i class="fas fa-search"></i></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar.."
+                  aria-label="Username"
+                  aria-describedby="otraConsulta"
+                />
+              </div>
+            </section>
+            <section class="container my-5">
+              <h5>Descarga huellitas y seguinos en todas partes</h5>
+              <a href="https://www.apple.com/store" target="_blank"
+                ><img src="../img/svg-contacto/badge-apple-store.svg" alt="apple store" class="imgStore"
+              /></a>
+              <a href="https://play.google.com/store" target="_blank"
+                ><img
+                  src="../img/svg-contacto/google-play-badge-bb.svg"
+                  alt="google play"
+                  class="imgStore"
+              /></a>
+            </section>
+            <section class="my-4 text">
+              <h5>Ante cualquier consulta nos dudes en contactarnos</h5>
+              <i class="fa fa-whatsapp fa-2x text-success"> 3815860462</i>
+            </section>
+          </div>
+          <section class="container-fluid mb-5 mapa text-center">
+            <h4 class="my-3 text-muted">
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Encontranos en nuestro local
+            </h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1135433731088!2d-65.20930278553502!3d-26.836340696485617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225c0ef228d361%3A0x3fec1c90865d763c!2sGral.%20Paz%20574%2C%20T4000BLL%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1635639606630!5m2!1ses-419!2sar"
+              class="mapaContacto"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <!-- SOBRE NOSOTROS -->
+
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Sobre nosotros</h5>
+            <p>
+              Huellitas es una organización no gubernamental sin fines de lucro abocada a difundir,
+              proteger y promover los derechos de los animales.
+            </p>
+          </div>
+
+          <!-- AYÚDANOS -->
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Ayúdanos</h5>
+            <p>
+              <a href="./galeria.html" class="text-info text-decoration-none">Adopta</a>
+            </p>
+            <p>
+              <a href="../page/error404.html" class="text-white text-decoration-none"> Donaciones</a>
+            </p>
+            <p>
+              <a href="../page/error404.html" class="text-white text-decoration-none">Voluntarios</a>
+            </p>
+          </div>
+
+          <!-- CONTACTO -->
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contacto</h5>
+            <p><i class="fa fa-home" aria-hidden="true"></i> General paz 574</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> depatitas.ong@gmail.com</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> +54 3815123456</p>
+          </div>
+        </div>
+
+        <!-- SEGUNDA LÍNEA  -->
+
+        <hr class="mb-4" />
+
+        <!-- COPYRIGHT -->
+
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              <strong class="text-info">Huellitas Blog</strong>
+              2021 &copy;Todos los derechos reservados.
+            </p>
+          </div>
+
+          <!-- REDES SOCIALES -->
+
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="https://twitter.com/depatitas" class="text-info" target="_black"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/depatitas/" target="_black" class="text-primary"
+                    ><i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/de_patitas_enlacalletucuman/?fbclid=IwAR20QYUTbpu6nnAAaCJAvD7ojEtqdTeUsoUP2s9aUYVankRt57VrTiZIumg"
+                    class="text-danger"
+                    target="_black"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a href="#" class="text-success" target="_black"
+                    ><i class="fa fa-whatsapp" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <!-- ----MODAL---- -->
+     <div
+     class="modal fade"
+     id="subs"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h4 class="modal-title title-modal" id="exampleModalLabel">Formulario de suscripción</h4>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           <label for="nombreApellido" class="form-label"
+             ><i class="fa fa-user" aria-hidden="true"></i> Nombre y Apellido</label
+           >
+           <div class="input-group mb-3">
+             <input
+               type="text"
+               class="form-control"
+               id="nombreApellido"
+               placeholder="Ingrese su nombre y apellido"
+               aria-label="Username"
+               aria-describedby="basic-addon1"
+             />
+           </div>
+           <label for="email" class="form-label"
+             ><i class="fa fa-envelope" aria-hidden="true"></i> Correo electrónico</label
+           >
+           <div class="input-group mb-3">
+             <input
+               type="mail"
+               class="form-control"
+               id="email"
+               placeholder="Ingrese su email"
+               aria-label="Recipient's username"
+               aria-describedby="basic-addon2"
+             />
+           </div>
+           <label for="contraseña" class="form-label"
+             ><i class="fa fa-eye" aria-hidden="true"></i> Contraseña</label
+           >
+           <div class="input-group mb-3">
+             <input
+               type="password"
+               class="form-control"
+               id="contraseña"
+               placeholder="Ingrese una contraseña"
+               aria-label="Username"
+               aria-describedby="basic-addon1"
+             />
+           </div>
+           <div class="input-group">
+             <label for="check">
+               <input type="checkbox" id="check" />
+               Recibir notificaciones a mi correo</label
+             >
+           </div>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">
+             Cancelar
+           </button>
+           <button type="button" class="btn btn-primary rounded-pill">Aceptar</button>
+         </div>
+       </div>
+     </div>
+   </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

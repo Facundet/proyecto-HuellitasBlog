@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f5f5f5 !important;
+  }
+  
+  
+  /*======= HEADER ESTILOS ==========*/
+  
+  header {
+    background: rgb(9, 23, 121);
+    background: linear-gradient(
+      87deg,
+      rgba(9, 23, 121, 1) 0%,
+      rgba(0, 138, 255, 1) 0%,
+      rgba(15, 126, 233, 1) 54%,
+      rgba(0, 70, 180, 1) 93%
+    );
+  }
+  #navbar {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  .link-adoptar:hover {
+    color: rgba(255, 255, 255, 0.55) !important;
+  }
+  
+  #logo {
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+  }
+  #logo:hover {
+    transform: rotate(330deg);
+  }
+
+/* ESTILOS DE LA ENTRADA DEL BLOG */
+#carousel .carousel-inner img{
+max-height: 70vh;
+object-fit: cover;
+
+}
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay{
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: seashell;
+    z-index: 1;
+}
+
+#carousel .overlay .container{
+    height: 100%;
+}
+
+#lugar-fecha .container-fluid{
+    background-color: black;
+    color: white;
+}
+
+#sugerencias input,
+#sugerencias textarea{
+    font-size: 1.5rem;
+}
+
+#sugerencias textarea{
+    resize: none;
+}
+/*======= BREAKPOINTS ==========*/
+
+  /*======= NAVBAR ==========*/
+@media (max-width: 769px){ 
+    .button-login{
+      margin-bottom: 5px;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
